@@ -1,0 +1,74 @@
+.margin-center { 
+    margin: auto;
+}
+
+.rounded-border {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.gray-text { 
+    color: #666;
+}
+
+.dark-gray-text {
+    color: #333;
+    font-weight: 700;
+}
+
+.bold { 
+    font-weight: 700;
+}
+
+.width-300 { 
+    width: 300px; 
+    margin: auto;
+}
+
+.snapshot { 
+    border: 10px solid #FFFFFF;
+    margin: 10px 0;
+    width: 280px;
+}
+
+.shadow { 
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.square {
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    width: 250px;
+}
+
+.circle {
+    border: 10px solid rgb(123, 205, 235);
+    border-radius: 125px;
+    display: inline-block; 
+    margin: 10px 0;
+    text-align: center;
+    width: 250px;
+}
+
+.chapters { 
+    cursor: pointer;
+    opacity: 0.5;
+
+    &:hover { 
+        opacity: 1.0;
+    }
+}
+
+.bcg {
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
