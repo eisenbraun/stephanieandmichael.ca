@@ -35,16 +35,6 @@ a {
     font-family: $font-family;
     font-weight: 300;
     text-decoration: none;
-
-    &.gray { 
-        color: $text-gray;
-        font-weight: 400;
-        padding-bottom: 20px;
-
-        &:hover { 
-            border-bottom: 2px solid #666;
-        }
-    }
 }
 
 p { 
@@ -94,60 +84,9 @@ label {
 
 .pure-g {
     width: 100%;
-    height: 100%;
+    /* height: 100%;
     overflow: hidden;
-    position: relative;
-}
-
-/*
- * -- MENU STYLES --
- * I want to customize how my .pure-menu looks at the top of the page
- */
-
-.home-menu {
-    padding: 0.5em;
-    text-align: center;
-    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
-    display: none;
-
-    &.pure-menu-open {
-        background: transparent;
-    }
-
-    .pure-menu-heading {
-        background-image: url('../img/common/logo.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 54px;
-        width: 54px;
-
-        span { 
-            display: none;
-        }
-    }
-
-    a {
-        color: $text-blue;
-    }
-
-    .pure-menu-selected a {
-        color: $text-white;
-
-    }
-
-    li a:hover, li a:focus {
-        background: transparent;
-        color: white;
-    }
-
-}
-
-.pure-menu.pure-menu-open.pure-menu-fixed {
-    /* Fixed menus normally have a border at the bottom. */
-    border-bottom: none;
-    /* I need a higher z-index here because of the scroll-over effect. */
-    z-index: 4;
+    position: relative;*/
 }
 
 /*
@@ -174,7 +113,7 @@ label {
     /* absolute center .splash within .splash-container */
     color: $text-white;
     width: 80%;
-    height: 50%;
+    height: 80%;
     margin: auto;
     position: absolute;
     top: 100px; left: 0; bottom: 0; right: 0;
@@ -204,6 +143,24 @@ label {
     text-transform: uppercase;
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
 }
+
+.splash-arrow {
+    text-align: center;
+
+    a {
+        color: white;
+        font-size: 18px;
+    }
+
+    .icon { 
+        margin-right: 10px;
+        position: relative; 
+        top: 11px;
+        width: 36px; 
+
+    }
+}
+
 
 /*
  * -- CONTENT STYLES --
@@ -311,10 +268,106 @@ label {
 
 /* This is the class used for the footer */
 .footer {
-    background: #111;
-    color: #eee;
+    bottom: 10px;
+    color: #666;
     font-family: $font-family;
     font-weight: 300;
+    left: 45%;
+    position: absolute;
+}
+
+
+/** Custom Parallax Styles */
+.parallax__layer--base {
+    -webkit-box-shadow: 0px -3px 5px 0px rgba(50, 50, 50, 0.4);
+    -moz-box-shadow:    0px -3px 5px 0px rgba(50, 50, 50, 0.4);
+    box-shadow:         0px -3px 5px 0px rgba(50, 50, 50, 0.4);
+}
+
+.parallax__layer--back {
+    background-color: $dark-blue;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover; 
+}
+
+.parallax__layer--fore { 
+    color: #FFFFFF;
+    padding: 2em 1em;
+
+    h2 {    
+        color: #FFFFFF;
+        font-family: $font-family;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: normal
+    }
+}
+
+
+/** Section Style for Parallax */
+#title {
+    z-index: 2;
+}
+
+#title .parallax__layer--back {
+    background-image: url('../img/backgrounds/splash-background.jpg');
+}
+
+#chapters {
+    z-index: 3;
+    height: 1600px;
+}
+#chapters .parallax__layer--back {
+    background: transparent;
+}
+
+#chapters .parallax__layer--base {
+    background: white;
+}
+
+#liberty {
+    z-index: 2;
+}
+#liberty .parallax__layer--back {
+    background-image: url('../img/backgrounds/liberty-background.jpg');
+}
+
+#dating {
+    z-index: 3;
+    height: 1000px;
+}
+
+#dating .parallax__layer--base {
+    background: white;
+}
+
+#proposal {
+    z-index: 2;
+}
+#proposal .parallax__layer--back {
+    background-image: url('../img/backgrounds/proposal-background.jpg');
+}
+
+#surprise {
+    z-index: 3;
+}
+#surprise .parallax__layer--base {
+    background: white;
+}
+
+#wedding {
+    z-index: 2;
+}
+#wedding .parallax__layer--back {
+    background-image: url('../img/backgrounds/wedding-background.jpg');
+}
+
+#next {
+    z-index: 3;
+}
+#next .parallax__layer--base {
+    background: white;
 }
 
 /*
@@ -355,7 +408,7 @@ label {
         position: absolute; 
         right: 40px;
         text-align: right;
-        top: 20px;
+        top: 40%;
     }
 
     .splash-head {
@@ -370,15 +423,32 @@ label {
         text-align: right;
     }
 
+    .splash-arrow { 
+        float: right;
+        width: 375px;
+    }
+
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {
         padding: 2em;
     }
 
-    .liberty { 
+    /** Section Styles for Parallax */
+    #chapters {
+        height: 950px;
+    }
+
+    #dating {
+        height: 850px;
+    }
+
+    #proposal {
+        height: 1200px;
+    }
+    /*.liberty {
         background-image: url('../img/photos/liberty-background.jpg');
         padding: 6em 2em;
-    }
+    }*/
 
     .proposal {
         background-image: url('../img/photos/proposal-background.jpg');
@@ -390,6 +460,19 @@ label {
         padding: 6em 2em;
     }
 
+}
+
+@media (min-width: 60em) {
+    #chapters { 
+        height: 100vh;
+    }
+}
+
+@media (min-width: 64em) {
+    
+    #proposal {
+        height: 1000px;
+    }
 }
 
 /*
@@ -409,5 +492,14 @@ label {
 
     .content { 
         padding: 8em 0;
+    }
+
+    /** Section Styles for Parallax */ 
+    #dating {
+        height: 725px;
+    }
+
+    #proposal {
+        height: 1000px;
     }
 }
