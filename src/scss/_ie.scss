@@ -1,0 +1,36 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .parallax__layer--back {
+        transform: none;
+        z-index: 3;
+    }
+
+    .parallax__layer--base {
+        padding: 2em 1em;  
+
+        h2 { 
+            margin: 0;
+        }
+    }
+
+    .parallax__layer--fore {
+        transform: none;
+        z-index: 5;
+        padding: 2em 1em;
+    }
+
+    @media (min-width: 64em) {
+        #chapters { 
+            height: 100%;
+        }
+
+        #surprise {
+            height: 100%;
+        }
+
+        #next {
+            height: 100%;
+        }
+
+    }
+
+}

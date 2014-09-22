@@ -25,7 +25,7 @@
     margin: auto;
 }
 
-.snapshot { 
+.snapshot {
     border: 10px solid #FFFFFF;
     margin: 10px 0;
     width: 280px;
@@ -102,8 +102,8 @@
 }
 
 .parallax__layer--fore {
-    -webkit-transform: translateZ(90px) scale(.7);
-    transform: translateZ(90px) scale(.7);
+    -webkit-transform: translateZ(45px) scale(.85);
+    transform: translateZ(45px) scale(.85);
     z-index: 1;
 }
 
