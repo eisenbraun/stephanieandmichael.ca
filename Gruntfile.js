@@ -29,13 +29,28 @@ module.exports = function(grunt) {
         },
 
         concat: {
+            base: {
+                src: [
+                    'bower_components/pure/pure.css'
+                ],
+                dest: 'src/scss/_base.scss'
+            },
+            layout: {
+                src: [
+                    'bower_components/pure/grids-responsive.css'
+                ],
+                dest: 'src/scss/_layout.scss'
+            }
+        },
+
+        /*concat: {
             dist: {
                 src: [
                     'src/js/app.js'
                 ],
                 dest: 'js/main.js'
             },
-        },
+        },*/
 
         uglify: {
             dist: { 
