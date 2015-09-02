@@ -9,75 +9,90 @@
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-    <header class="header">
-        <nav class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
-            <a class="pure-menu-heading" href="">Stephanie and Michael</a>
+    <!--<div class="debug">
+        <label><input type="checkbox"> Debug</label>
+    </div>-->
+    <section class="parallax">
+        <article id="title" class="parallax__group">
+            <div class="parallax__layer parallax__layer--back">
+                <div class="splash">
+                    <h1 class="splash-head">Stephanie<br>&amp; Michael</h1>
+                    <h3 class="splash-subhead">
+                        This is our story
+                    </h3>
+                    <div class="splash-arrow">
+                        <a href="#chapters">
+                            <img src="img/icons/down-arrow.png" alt="Down Arrow" class="icon"> Begin Story
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
 
-            <ul>
-                <li class="pure-menu-selected"><a href="#">Home</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
+        <article id="chapters" class="parallax__group">
+            <div class="parallax__layer parallax__layer--base">
+                <h2 class="content-head is-center">From Liberty to Breeze<br>
+                    <small>Chapters</small></h2>
 
-    <section class="splash-container">
-        <div class="splash">
-            <h1 class="splash-head">Stephanie<br>&amp; Michael</h1>
-            <h3 class="splash-subhead">
-                This is our story
-            </h3>
-        </div>
-    </section>
-    <section class="content-wrapper">
-        <article id="chapters" class="content">
-            <h2 class="content-head is-center">From Liberty to Breeze<br>
-                <small>Chapters</small></h2>
+                <div class="pure-g">
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 chapters">
+                        <a href="#liberty">
+                            <img class="square is-center" src="img/photos/liberty-square.jpg" alt="First meeting">
+                            <h3 class="is-center">
+                                Falling in Love
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 chapters" data-href="dating">
+                        <a href="#dating">
+                            <img class="square is-center" src="img/photos/dating-square.jpg" alt="Dating">
+                            <h3 class="is-center">
+                                International Dating
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 chapters" data-href="proposal">
+                        <a href="#proposal">
+                            <img class="square is-center" src="img/photos/proposal-square.jpg" alt="The Proposal">
+                            <h3 class="is-center">
+                                The Proposal
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 chapters" data-href="wedding">
+                        <a href="#wedding">
+                            <img class="square is-center" src="img/photos/wedding-square.jpg" alt="The Wedding">
+                            <h3 class="is-center">
+                                The Wedding
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+        </article>
 
+        <article id="liberty" class="parallax__group">
+          <div class="parallax__layer parallax__layer--fore">
             <div class="pure-g">
-                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 chapters" data-href="liberty">
-                    <img class="square is-center" src="img/photos/liberty-square.jpg" alt="First meeting">
-                    <h3 class="is-center">
-                        Falling in Love
-                    </h3>
+                <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+                    <h2>Falling in Love</h2>
+
+                    <p>
+                        We met the first day of a Carnival singles cruise. I saw Michael across the dance floor and casually went over and started dancing with him. We introduced ourselves and I learned he was from Omaha (wherever the heck that is). We clicked right away, and his intoxicating gaze pulled me in for our first kiss. When we left the dance floor he was holding my hand, and he basically didn't let go the whole trip. We were inseparable. By the third day Michael was saying, "I love you", and I would answer, "you're crazy", but he won me over completely in just a few short days. Everyone around us could tell how in love we were and they were always surprised we had just met.<br>
+                        <em>~ Stephanie</em>
+                    </p>
                 </div>
-                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 chapters" data-href="dating">
-                    <img class="square is-center" src="img/photos/dating-square.jpg" alt="Dating">
-                    <h3 class="is-center">
-                        International Dating
-                    </h3>
-                </div>
-                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 chapters" data-href="proposal">
-                    <img class="square is-center" src="img/photos/proposal-square.jpg" alt="The Proposal">
-                    <h3 class="is-center">
-                        The Proposal
-                    </h3>
-                </div>
-                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 chapters" data-href="wedding">
-                    <img class="square is-center" src="img/photos/wedding-square.jpg" alt="The Wedding">
-                    <h3 class="is-center">
-                        The Wedding
-                    </h3>
+                <div class="is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+                    <img class="pure-img-responsive snapshot" alt="New Year's Eve 2012" src="img/photos/liberty-snapshot.jpg">
                 </div>
             </div>
+          </div>
+          <div class="parallax__layer parallax__layer--back"></div>
         </article>
 
-        <article id="liberty" class="liberty pure-g parallax bcg">
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-
-                <h2 class="content-head">Falling in Love</h2>
-
-                <p>
-                    We met the first day of a Carnival singles cruise. I saw Michael across the dance floor and casually went over and started dancing with him. We introduced ourselves and I learned he was from Omaha (wherever the heck that is). We clicked right away, and his intoxicating gaze pulled me in for our first kiss. When we left the dance floor he was holding my hand, and he basically didn't let go the whole trip. We were inseparable. By the third day Michael was saying, "I love you", and I would answer, "you're crazy", but he won me over completely in just a few short days. Everyone around us could tell how in love we were and they were always surprised we had just met.<br>
-                    <em>~ Stephanie</em>
-                </p>
-            </div>
-            <div class="is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-                <img class="pure-img-responsive snapshot" alt="New Year's Eve 2012" src="img/photos/liberty-snapshot.jpg">
-            </div>
-        </article>
-
-        <article id="dating" class="content">
+        <article id="dating" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
             <h2 class="content-head is-center">International Dating</h2>
 
             <div class="pure-g">
@@ -89,13 +104,13 @@
                 </div>
 
                 <div class="l-box-lrg pure-u-1 pure-u-md-2-5 is-center">
-                    <img class="circle" src="img/photos/dating-circle-01.jpg">
-                    <img class="circle" src="img/photos/dating-circle-02.jpg">
+                    <img class="circle" src="img/photos/dating-circle-04.jpg">
+                    <img class="circle" src="img/photos/dating-circle-05.jpg">
                 </div>
 
             </div>
 
-            <div class="pure-g">
+            <!--<div class="pure-g">
                 <div class="l-box-lrg pure-u-1 pure-u-md-2-5 is-center">
                     <img class="circle" src="img/photos/dating-circle-04.jpg">
                 </div>
@@ -106,35 +121,41 @@
                         In February, I visited Stephanie in Ottawa, Ontario. I have to admit I was a little nervous going Canada in the middle of winter. I don't like how cold it gets in Omaha, but as Stephanie showed me, if you dressed appropriately, the frigid cold really isn't so bad. It was Winterfest in Ottawa, so we partook in all the festivities, including ice skating on canal, eating Beaver Tails, and overdosing on frozen maple syrup. We also enjoyed other winter activities like snowboarding and an outdoor spa.
                     </p>
                 </div>
-            </div>
-
+            </div>-->
+          </div>
         </article>
 
-        <article id="proposal" class="proposal pure-g parallax bcg">
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+        <article id="proposal" class="parallax__group">
+            <div class="parallax__layer parallax__layer--fore">
+                <div class="pure-g">
+                    <div class="l-box-lrg pure-u-1 pure-u-md-1 pure-u-lg-3-5">
 
-                <h2 class="content-head">The Proposal</h2>
+                        <h2>The Proposal</h2>
 
-                <p>
-                    By the end of the cruise, I knew that Stephanie was the one. But, the Spock in me told me I should wait the appropriate amount of time before popping the question. That appropriate amount of time turned out to be six weeks.
-                </p>
+                        <p>
+                            By the end of the cruise, I knew that Stephanie was the one. But, the Spock in me told me I should wait the appropriate amount of time before popping the question. That appropriate amount of time turned out to be six weeks.
+                        </p>
 
-                <p>
-                    I had spent days trying to come up with the perfect way to ask and with only three days to go I got a eureka moment. I bought several small gifts, the last item being a Peter Pan Blu-ray, one of Stephanie's favorite movies. On the front of the Diamond Edition movie, I taped the engagement ring. The plan was to ask a series of yes or no questions, related to each gift. For example, I asked,"If I promise to always make you smile, will you reward me with hugs and kisses?" When she said, "Yes." I gave her a box of Hershey kisses and hugs. The idea was to give her a little practice saying, "Yes," before I asked the big question.
-                </p>
+                        <p>
+                            I had spent days trying to come up with the perfect way to ask and with only three days to go I got a eureka moment. I bought several small gifts, the last item being a Peter Pan Blu-ray, one of Stephanie's favorite movies. On the front of the Diamond Edition movie, I taped the engagement ring. The plan was to ask a series of yes or no questions, related to each gift. For example, I asked,"If I promise to always make you smile, will you reward me with hugs and kisses?" When she said, "Yes." I gave her a box of Hershey kisses and hugs. The idea was to give her a little practice saying, "Yes," before I asked the big question.
+                        </p>
 
-                <p> 
-                    It was Valentine's Day. I was visiting Stephanie in Ottawa for a long weekend. We had just finished dinner and we went back to the hotel for a moment before going out dancing. I asked her to sit down, and went through my little dog and pony show. When I gave her the Peter Pan movie I made sure to give it to her with the ring down. She opened it and flipped it over, and just as I had planned it took her a few moments to see the ring. She saw it, gasped, let out an "Oh My God," and started laughing. She said "YES!" before I even had a chance to ask the question.<br>
-                    <em>~ Michael</em>
-                </p>
+                        <p> 
+                            It was Valentine's Day. I was visiting Stephanie in Ottawa for a long weekend. We had just finished dinner and we went back to the hotel for a moment before going out dancing. I asked her to sit down, and went through my little dog and pony show. When I gave her the Peter Pan movie I made sure to give it to her with the ring down. She opened it and flipped it over, and just as I had planned it took her a few moments to see the ring. She saw it, gasped, let out an "Oh My God," and started laughing. She said "YES!" before I even had a chance to ask the question.<br>
+                            <em>~ Michael</em>
+                        </p>
+                    </div>
+                    <div class="is-center pure-u-1 pure-u-md-1 pure-u-lg-2-5">
+                        <img class="pure-img-responsive snapshot" alt="Ring on Finger" src="img/photos/proposal-snapshot-02.jpg">
+                        <img class="pure-img-responsive snapshot" alt="Engagement Photo" src="img/photos/proposal-snapshot-01.jpg">
+                    </div>
+                </div>
             </div>
-            <div class="is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-                <img class="pure-img-responsive snapshot" alt="Ring on Finger" src="img/photos/proposal-snapshot-02.jpg">
-                <img class="pure-img-responsive snapshot" alt="Engagement Photo" src="img/photos/proposal-snapshot-01.jpg">
-            </div>
+            <div class="parallax__layer parallax__layer--back"></div>
         </article>
 
-        <article id="surprise" class="content">
+        <article id="surprise" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
             <h2 class="content-head is-center">Unexpected Surprise</h2>
 
             <div class="pure-g">
@@ -150,43 +171,52 @@
                 </div>
 
             </div>
-
+          </div>
         </article>
 
-        <article id="wedding" class="wedding pure-g parallax bcg">
-            <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-
-                <h2 class="content-head">The Wedding</h2>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-            <div class="is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-                <img class="pure-img-responsive snapshot" alt="Wedding Photo" src="img/photos/wedding-snapshot-02.jpg">
-            </div>
-        </article>
-
-        <article class="content">
-            <h2 class="content-head is-center">The End</h2>
-
+        <article id="wedding" class="parallax__group">
+          <div class="parallax__layer parallax__layer--fore">
             <div class="pure-g">
-                <div class="l-box-lrg pure-u-1">
-                    <img class="pure-img-responsive" alt="Wedding Photo" src="img/photos/the-end.jpg">
+                <div class="l-box-lrg pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+
+                    <h2>The Wedding</h2>
+
+                    <p>
+                        It was crazy leading up to the wedding. Originally, scheduled for New Year's, due to our unexpected surprise the wedding was moved up by 3 months. Working with Carnival and our family, we were able to move the date of our wedding and honeymoon. The were some crazy moments, like running through an Airport with a Wedding Dress and Tux to make it to the county office in time to get our marriage license, but we did it together. On September 22, 2013, on board the Carnival Breeze, Stephanie and I were married in the presence of our immediate family.<br>
+                        <em>~ Michael</em>
+                    </p>
+                </div>
+                <div class="is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+                    <img class="pure-img-responsive snapshot" alt="Wedding Photo" src="img/photos/wedding-snapshot-02.jpg">
                 </div>
             </div>
+          </div>
+          <div class="parallax__layer parallax__layer--back"></div>
         </article>
 
-        <!--<footer class="footer l-box is-center">
-            View the source of this layout to learn more. Made with love by the YUI Team.
-        </footer>-->
+        <article id="next" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+            <h2 class="content-head is-center">The Story Continues</h2>
 
+            <div class="pure-g">
+                <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
+                    <h4>Michael writes:</h4>
+                    <p>
+                        In a fairy tale this is the part where the story ends, however, our story is just beginning. Our daughter, Isabelle Liberty, was born on March 3, 2014 in Bellevue, Nebraska, United States of America. She has truly changed our lives. On August 16, 2014, our little family moved to Ottawa, ON, Canada. As our one year wedding anniversary approaches, Stephanie and I have been through a lot in very short time. It has been a whirlwind adventure, and I expect many more to come.
+                    </p>
+                </div>
+
+                <div class="l-box-lrg pure-u-1 pure-u-md-2-5 is-center">
+                    <img class="circle" src="img/photos/isabelle-square.jpg">
+                </div>
+
+            </div>
+             <footer class="footer">
+        &copy; 2014 Michael Eisenbraun
+    </footer>
+          </div>
+        </article>
     </section>
-  <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>
